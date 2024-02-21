@@ -16,7 +16,7 @@ class AbstractPowerSchedule:
         self.path_frequency: dict = {}
 
     @abc.abstractmethod
-    def _assign_energy(self, seeds: list[AbstractSeed]) -> None:
+    def _assign_energy(self, seeds: list[AbstractSeed]) -> list[AbstractSeed]:
         """Assigns each seed the same energy"""
         for seed in seeds:
             seed.energy = 1
