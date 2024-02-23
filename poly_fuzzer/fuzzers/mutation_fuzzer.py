@@ -26,7 +26,6 @@ class MutationFuzzer(AbstractFuzzer):
         self.seeds = seeds
         self.seed_index = 0
         self.executor = executor
-        self.seed_index = 0
         self.power_schedule = power_schedule
         self.min_mutations = min_mutations
         self.max_mutations = max_mutations
